@@ -3346,7 +3346,8 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		/* background-color: #ffffff; */
+		background-color: #8fc5e8;
 		color: #636363;
 		border-radius: 0.25em;
 	}
