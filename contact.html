@@ -31,13 +31,19 @@
 				<!-- Form -->
 				<section>
 					<h2>Offerte Aanvragen</h2>
-					<form method="post" action="#">
+					<form method="post" action="https://formsubmit.co/ikokianna@gmail.com">
+					<!-- Honeypot -->
+					<input type="text" name="_honey" style="display: none;">
+
+					<!-- Disable Captcha -->
+          <input type='hidden' name="_captcha" value='false'>
+					
 						<div class="row gtr-uniform">
 							<div class="col-6 col-12-xsmall">
-								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Naam" />
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Naam" required/>
 							</div>
 							<div class="col-6 col-12-xsmall">
-								<input type="email" name="demo-email" id="demo-email" value="" placeholder="E-mail" />
+								<input type="email" name="demo-email" id="demo-email" value="" placeholder="E-mail" required/>
 							</div>
 							<div class="col-12">
 								<select name="demo-category" id="demo-category">
