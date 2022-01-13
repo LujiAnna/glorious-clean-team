@@ -3385,7 +3385,7 @@ input, select, textarea {
 	}
 
 		#main input, #main select, #main textarea {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main a:hover {
@@ -3494,7 +3494,7 @@ input, select, textarea {
 		#main input[type="email"],
 		#main select,
 		#main textarea {
-			background-color: rgba(222, 222, 222, 0.25);
+			background-color: #ffffff;
 			border-color: #dddddd;
 		}
 
