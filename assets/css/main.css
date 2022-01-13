@@ -128,7 +128,7 @@ input, select, textarea {
 		/* background-color: #01568E; */
 		/* background-color: #4eb7fd; */
 		color: rgba(255, 255, 255, 0.65);
-		color: #01568E;
+		/* color: #01568E; */
 		/* background-color: #f7f7f7; */ 
 	}
 
@@ -3237,8 +3237,13 @@ input, select, textarea {
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
-		text-align: center;
+		text-align: right;
+		display: inline;
+				float: right;
+
 	}
+
+
 
 		#nav input, #nav select, #nav textarea {
 			color: #636363;
@@ -3276,8 +3281,13 @@ input, select, textarea {
 		#nav ul {
 			margin: 0;
 			padding: 0;
-	
+		/* display: flex; */
 		}
+
+			.push {
+				float: left;
+		    /* margin-right: auto; */
+	}
 
 			#nav ul li {
 				-moz-transition: margin 0.2s ease;
@@ -3325,20 +3335,41 @@ input, select, textarea {
 
 			#nav.alt ul li {
 				margin: 0 0.175em;
+				/* margin-left: auto!important;  */
 			}
 
+	
+
 				#nav.alt ul li a {
-					font-size: 0.9em;
+					font-size: 1.2em;
 				}
+
+					.down {
+					margin-top: 30px;
+				}
+
 
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				display: none;
+				/* display: none; */
 			}
 
 				#nav + #main {
-					padding-top: 0;
+					padding-top: 100px;
+				}
+
+					#nav.alt {
+			padding: 0;
+		}
+
+		#nav.alt ul li {
+				margin: 0;
+			}
+
+				#nav.alt ul li a {
+					font-size: 0.8em;
+					font-weight: bold;
 				}
 
 		}
@@ -3347,8 +3378,9 @@ input, select, textarea {
 
 	#main {
 		/* background-color: #ffffff; */
-		background-color: #8fc5e8;
-		color: #636363;
+		/* background-color: #8fc5e8; */
+		background-color: #1C3C54;
+		color: #ffffff;
 		border-radius: 0.25em;
 	}
 
@@ -3365,7 +3397,7 @@ input, select, textarea {
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main blockquote {
@@ -3392,7 +3424,7 @@ input, select, textarea {
 		#main .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			color: #ffffff !important;
 		}
 
 			#main input[type="submit"]:hover,
@@ -3486,7 +3518,7 @@ input, select, textarea {
 
 		#main input[type="checkbox"] + label,
 		#main input[type="radio"] + label {
-			color: #636363;
+			color: #ffffff;
 		}
 
 			#main input[type="checkbox"] + label:before,
