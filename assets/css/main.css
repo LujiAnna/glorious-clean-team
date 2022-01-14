@@ -3385,7 +3385,7 @@ input, select, textarea {
 	}
 
 		#main input, #main select, #main textarea {
-			color: #ffffff;
+			color: #000000;
 		}
 
 		#main a:hover {
@@ -3456,7 +3456,7 @@ input, select, textarea {
 			#main input[type="button"].primary,
 			#main button.primary,
 			#main .button.primary {
-				background-color: #8cc9f0;
+				background-color: #000000;
 				color: #ffffff !important;
 				box-shadow: none;
 			}
