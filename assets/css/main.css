@@ -2,9 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
 /*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Developer | Designer: annaikoki.com
 */
 
 html, body, div, span, applet, object,
@@ -1967,6 +1965,8 @@ input, select, textarea {
 		.button.primary {
 			background-color: #8cc9f0;
 			color: #ffffff !important;
+			/* background-color: #D6E8F1;
+			color: #203f56 !important; */
 			box-shadow: none;
 		}
 
@@ -3466,7 +3466,9 @@ input, select, textarea {
 				#main input[type="button"].primary:hover,
 				#main button.primary:hover,
 				#main .button.primary:hover {
-					background-color: #9acff2;
+					/* background-color: #9acff2; */
+				background-color:#ffffff;
+				color:#000000 !important;
 				}
 
 				#main input[type="submit"].primary:active,
