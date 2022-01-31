@@ -1,0 +1,25 @@
+{
+  "name": "gloriouscleaning",
+  "version": "1.0.0",
+  "description": "Cleaning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LujiAnna/glorious-clean-team.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LujiAnna/glorious-clean-team/issues"
+  },
+  "homepage": "https://github.com/LujiAnna/glorious-clean-team#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemailer": "^6.7.2",
+    "nodemailer-mailgun-transport": "^2.1.3"
+  }
+}

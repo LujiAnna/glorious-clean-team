@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Dev: annaikoki.com
 -->
 <html>
 	<head>
@@ -44,37 +42,34 @@
 				<!-- Form -->
 				<section>
 					<h2>Offerte aanvragen</h2>
-					<form method="post" action="https://formsubmit.co/eecf7780e0cc28d8acd1a3b0fb587ca7">
+					<form id="contact-form" method="post" action="/contact">
 					<!-- Honeypot -->
 					<input type="text" name="_honey" style="display: none;">
 
-					<!-- Disable Captcha -->
-          <input type='hidden' name="_captcha" value='false'>
 
-					  <input type='hidden' name="_next" value='https://lujianna.github.io/glorious-clean-team/success.html'>
+					  <!-- <input type='hidden' name="_next" value='https://gloriousclean.be//success.html'> -->
 					
 					<!-- Send to another email as well -->
-					<input type="hidden" name="_cc" value="ikokiana@gmail.com,cath@masalagent.be,bilal.abbas@masalagent.be ">
-
+					<!-- <input type="hidden" name="_cc" value="gloriousclean@gloriousclean.be"> -->
 
 						<div class="row gtr-uniform">
 							<div class="col-6 col-12-xsmall">
-								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Naam" required/>
+								<input type="text" name="name" id="name" value="" placeholder="Naam" required/>
 							</div>
 							<div class="col-6 col-12-xsmall">
-								<input type="email" name="demo-email" id="demo-email" value="" placeholder="E-mail" required/>
+								<input type="email" name="email" id="email" value="" placeholder="E-mail" required/>
 							</div>
 							<div class="col-4 col-12-small">
-								<input type="radio" id="demo-priority-low" name="huizen" checked>
-								<label for="demo-priority-low">Huizen</label>
+								<input type="checkbox" id="huis" name="gebouw" checked>
+								<label for="huis">Huizen</label>
 							</div>
 							<div class="col-4 col-12-small">
-								<input type="radio" id="demo-priority-normal" name="kanotren">
-								<label for="demo-priority-normal">Kantoren</label>
+								<input type="checkbox" id="kantoor" name="gebouw">
+								<label for="kantoor">Kantoren</label>
 							</div>
 							<div class="col-4 col-12-small">
-								<input type="radio" id="demo-priority-high" name="other">
-								<label for="demo-priority-high">Overige</label>
+								<input type="checkbox" id="overige" name="gebouw">
+								<label for="overige">Overige</label>
 							</div>
 							<!-- <div class="col-6 col-12-small">
 								<input type="checkbox" id="demo-copy" name="demo-copy">
@@ -85,12 +80,12 @@
 								<label for="demo-human">Geen robot</label>
 							</div> -->
 							<div class="col-12">
-								<textarea name="demo-message" id="demo-message" placeholder="Voer uw bericht in
+								<textarea name="message" id="message" placeholder="Voer uw bericht in
 								" rows="6"></textarea>
 							</div>
 							<div class="col-12">
 								<ul class="actions">
-									<li><input type="submit" value="Versturen" class="primary" /></li>
+									<li><input type="submit" value="Versturen" class="primary" onclick="sendQuote();" /></li>
 									<li><input type="reset" value="Resetten" /></li>
 								</ul>
 							</div>
@@ -140,6 +135,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/script.js"></script>
 	</body>
 </html>
