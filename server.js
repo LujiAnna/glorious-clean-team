@@ -3,11 +3,58 @@ const nodemailer = require('nodemailer');
 const multiparty = require('multiparty');
 require('dotenv').config();
 
+const username = process.env.USERNAME;
+const pass = process.env.PASSWORD;
+
 // instantiate the express app
 const app = express();
-const port = 3000;
+const PORT = 3000;
 const log = console.log;
-const path = require('path');
+
+//Middleware
+app.use(express.static("public"));
+app.use(express.json());
+
+app.get("/", (req, res)=>{
+    res.sendFile(__dirname + "/public/contact.html");
+});
+
+app.post("/send", (req, res)=>{
+    console.log(req.body);
+
+    //used to send the emailn
+    //Still have to figure out OAuth2 for gmail!
+    const transporter = nodemailer.createTransport({
+        service: "mailprotect",
+        host: "smtp-auth.mailprotect.be",
+        auth: {
+            user: username,
+            pass: pass
+        }
+    });
+
+    //passing information from front end body request
+    const mailOptions = {
+        from: req.body.email,
+        to: username,
+        subject: `Nieuw bericht van ${req.body.email}, ${req.body.names}`,
+        text: req.body.message
+    }
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if(error){
+            console.log(error);
+            res.send("error");
+        }else{
+            console.log("Email sent: " + info.response);
+            res.sendFile(__dirname + "/public/success.html");
+        }
+    });
+});
+
+app.listen(PORT, () =>{
+    console.log(`Server running on port ${PORT}`)
+});
 
 // For POST and PUT request
 // parse the body from post/fetch request
