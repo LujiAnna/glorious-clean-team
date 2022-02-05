@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/LujiAnna/glorious-clean-team#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "dotenv": "^15.0.0",
     "express": "^4.17.2",
     "multiparty": "^4.2.3",

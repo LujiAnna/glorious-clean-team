@@ -16,10 +16,10 @@ app.use(express.static("public"));
 app.use(express.json());
 
 app.get("/", (req, res)=>{
-    res.sendFile(__dirname + "/public/contact.html");
+    res.sendFile(__dirname + "/public/contact.html")
 });
 
-app.post("/send", (req, res)=>{
+app.post("/", (req, res)=>{
     console.log(req.body);
 
     //used to send the emailn
@@ -47,7 +47,7 @@ app.post("/send", (req, res)=>{
             res.send("error");
         }else{
             console.log("Email sent: " + info.response);
-            res.sendFile(__dirname + "/public/success.html");
+            res.send("succes");
         }
     });
 });

@@ -1,21 +1,22 @@
 const form = document.querySelector(".contact-form");
+const button = document.getElementById("sendQuote");
 let names = document.getElementById("name");
 let email = document.getElementById("email");
 let message = document.getElementById("message");
 
-const formEvent = form.addEventListener("sendQuote", (e) => {
+const formEvent = form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    let formData = {
+    formData = {
         names: names.value,
         email: email.value,
         message: message.value
     };
 
-    console.log("succes");
+    console.log(formData);
 
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "/send");
+    xhr.open("POST", "/");
     //make json object of data
     xhr.setRequestHeader("content-type", "application/json");
     xhr.onload = function (){
