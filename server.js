@@ -25,7 +25,7 @@ app.post("/", (req, res)=>{
     //used to send the emailn
     //Still have to figure out OAuth2 for gmail!
     const transporter = nodemailer.createTransport({
-        service: "mailprotect",
+        name: "mailprotect.be",
         host: "smtp-auth.mailprotect.be",
         auth: {
             user: username,
